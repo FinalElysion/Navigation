@@ -1,0 +1,20 @@
+<div class ="container" style="padding-top: 150px;">
+	<ul class="nav nav-pills">
+		<li role="presentation" ng-class="{ active:'home'== currentType }" >
+			<a ui-sref="app.home" ng-click="changeTab('home')">主页</a>
+		</li>
+		<li role="presentation" ng-class="{ active:'article'== currentType }">
+			<a ui-sref="app.article" ng-click="changeTab('article')">文章</a>
+		</li>
+		<li role="presentation" ng-class="{ active:'photo'== currentType }">
+			<a ui-sref="app.photo" ng-click="changeTab('photo')">相册</a>
+		</li>
+		<li role="presentation" ng-class="{ active:'music'== currentType }">
+			<a ui-sref="app.music" ng-click="changeTab('music')">音乐</a>
+		</li>
+		<li role="presentation" ng-class="{ active:'comment'== currentType }">
+			<a ui-sref="app.comment" ng-click="changeTab('comment')">留言板</a>
+		</li>
+	</ul>
+</div>
+<div ui-view class ="container" style="height:100%;"></div>
